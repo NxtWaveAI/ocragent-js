@@ -1,0 +1,49 @@
+{
+  "name": "nxtwaveai-ocr",
+  "version": "1.0.1",
+  "description": "Official Node.js / TypeScript SDK for OCR Agent — extract structured data from documents using AI",
+  "author": "NxtwaveAI <hello@nxtwaveai.com>",
+  "license": "MIT",
+  "homepage": "https://ocr.nxtwaveai.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nxtwaveai/ocragent-js"
+  },
+  "keywords": [
+    "ocr",
+    "document",
+    "extraction",
+    "ai",
+    "nxtwaveai",
+    "invoice",
+    "pdf"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.28.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
